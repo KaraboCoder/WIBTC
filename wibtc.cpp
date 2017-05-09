@@ -20,43 +20,42 @@ class 	WIBTC
 {
 	public:
     
-		WIBTC(string _idNumber, string _name, int _gender)
-		{
-			setDetails(_idNumber, _name, _gender);
-		}
+	WIBTC(string _idNumber, string _name, int _gender)
+	{
+		setDetails(_idNumber, _name, _gender);
+	}
     
         WIBTC()
         {
-            name        = "";
-            idNumber    = "";
-            gender      = -1;
+		name		= "";
+		idNumber	= "";
+		gender		= -1;
         }
-
-		void		setDetails(string _idNumber, string _name, int _gender)
-		{
-			name 		=	_name;
-			idNumber	=	_idNumber;
-			gender 		= 	_gender;
-		}
-
-		string		getIDNumber(void)const
-		{
-			return	(idNumber);
-		}
-
-		string		getName(void)const
-		{
-			return	(name);
-		}
-
-		int			getGender(void)const
-		{
-			return	(gender);
-		}
-
-
+	
+	void	setDetails(string _idNumber, string _name, int _gender)
+	{
+		name 		=	_name;
+		idNumber	=	_idNumber;
+		gender		= 	_gender;
+	}
+	
+	string	getIDNumber(void)const
+	{
+		return	(idNumber);
+	}
+	
+	string	etName(void)const
+	{
+		return	(name);
+	}
+	
+	int	getGender(void)const
+	{
+		return	(gender);
+	}
+	
 	private:
-
+	
 		string  name;
 		string  idNumber;
 		int     gender;
@@ -84,7 +83,7 @@ int 	isNumeric(string str)
 		}
 		else
 		{
-            return (0);
+			return (0);
 		}
 	}
 	return (1);
